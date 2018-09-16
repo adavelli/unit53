@@ -6,11 +6,9 @@
 
   <groupId>com.bubble</groupId>
   <artifactId>mvnwebapp</artifactId>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-
   <name>mvnwebapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,16 +29,19 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
+	  <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
         <!-- see http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/usage.html -->
 	<plugin>
         	<groupId>org.apache.tomcat.maven</groupId>
-        	<artifactId>maven-war-plugin</artifactId>
-        	<version>2.6-SNAPSHOT</version>
+        	<artifactId>tomcat7-maven-plugin</artifactId>
+        	<version>2.2</version>
              <configuration>
-          	<url>http://localhost:8080/manager/text</url>
+          	<url>http://localhost:9090/manager/text</url>
+		<server>Tomcat</server>
+		<path>/mvnwebapp</path>
              </configuration>
 	</plugin>
       </plugins>
