@@ -38,8 +38,8 @@
 	<plugin>
         	<groupId>org.apache.tomcat.maven</groupId>
         	<artifactId>tomcat7-maven-plugin</artifactId>
-        	<packaging>war</packaging>        
-        	<version>2.3-SNAPSHOT</version>
+		<package>org.apache.maven.plugins:maven-war-plugin:2.2:war</package>        
+        	<version>2.2-SNAPSHOT</version>
              <configuration>
           	<url>http://localhost:8080/manager/text</url>
              </configuration>
