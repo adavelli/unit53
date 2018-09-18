@@ -7,21 +7,12 @@
   <groupId>com.bubble</groupId>
   <artifactId>mvnwebapp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>mvnwebapp</name>
 
   <properties>
     <deployFolder>/asc/java/apache-tomcat-9.0.11/webapps</deployFolder>
   </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
