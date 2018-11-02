@@ -1,13 +1,7 @@
-fsdfsdfd
-sdfsdfsdfsd
-fsdfsdfsdf
-sfsdfsdfsd
-fdfsdfsdf
-sdfdsfsdf
-sdfsdfsdfsd
-fsdfsdfsdfs
-fsafasf
-asfasdfsdfsdf
-sdfsdfsdfsdfsdfsdf
-sdfsdfsdfsdfsdfasfsfsf
-sdfdfdfsdfd
+a=`cat gsample|wc -l` 
+if [ $a -eq 0 ]
+then
+  echo "ERROR"
+else
+   echo "lines equal to $a"
+fi
